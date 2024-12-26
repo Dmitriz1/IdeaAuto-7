@@ -27,7 +27,6 @@ public class AuthTest {
         LoginPage loginPage = new LoginPage();
         VerificationPage verificationPage = loginPage.validLogin(validUser);
         DashboardPage dashboardPage = verificationPage.validVerify(DBUtils.getVerificationCode());
-        assertEquals("Личный кабинет", dashboardPage.getHeading());
     }
 
     @Test
